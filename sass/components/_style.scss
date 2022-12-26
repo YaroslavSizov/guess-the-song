@@ -6,6 +6,22 @@ h1 {
   text-align: center;
 }
 
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.true {
+  background-color: rgba(0, 255, 0, 0.311);
+}
+
+.false {
+  background-color: rgba(255, 0, 0, 0.311);
+}
+
 .num {
   display: none;
 }
@@ -35,29 +51,37 @@ button {
   border-radius: 4px;
   transition: background-color 200ms ease, color 250ms ease,
     box-shadow 250ms ease;
-}
 
-.true:focus {
-  background-color: green;
-}
-
-button:focus {
+  &:focus {
     color: black;
-  background-color: red;
-  border-radius: 15px;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    // color: white;
+    // background-color: #2196f3;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+  }
 }
 
-// button:focus,
-button:hover {
-  //   color: white;
-  //   background-color: #2196f3;
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 15px;
-}
-
-.item {
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10,
+.item11,
+.item12,
+.item13,
+.item14,
+.item15 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +92,10 @@ button:hover {
   border: solid 2px;
   border-color: #afb1b8;
   border-radius: 5px;
+
+  @media screen and (min-width: 768px) {
+    padding: 15px;
+  }
 
   & ul {
     display: flex;
